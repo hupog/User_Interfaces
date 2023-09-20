@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle>Ejercicio1</tittle>
+</head>
+<body>
+    <form id ="formulario" name="name_formulario" action="http://193.147.87.202/procesaform.php" method="post">
+
+        <label for="email">Escribe tu email:</label><br>
+        <input type="text" id="email" name="email" size="70" placeholder="usuario@dominio.com"/><br>
+
+        <label for="clave">Escribe tu contraseña:</label><br>
+        <input type="password" id="clave" name="clave" size="20"/><br>
+
+        <p>Elige uno de los lenguajes:<br>
+        <input type="checkbox" name="lenguaje" value="html">HTML
+        <input type="checkbox" name="lenguaje" value="javascript">Javascript
+        <input type="checkbox" name="lenguaje" value="css">CSS
+        <input type="checkbox" name="lenguaje" value="xml">XML
+        </p><br>
+
+        <p>
+        <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
+        <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30
+        <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50
+        <input type="radio" id="mas50" value="mas50" name="edad" checked="checked"/>Más de 50
+        </p><br>    
+
+        <label for="identificador"></label><br>
+        <input type="file" id="identificador" value="valor" name="nombre"/><br>
+
+        <input type="hidden" id="identificador" value="valor" name="nombre"/>
+
+        <input type="image" src="https://static.wikia.nocookie.net/southpark/images/f/f0/Towelie_%281%29.png/revision/latest/scale-to-width/360?cb=20140802150917" name="toallin" alt="toallin se esta drogando"/><br>
+
+        <textarea rows="10" cols="50" name="opinion_toallin" placeholder="Que opinas de toallín?"></textarea><br>
+
+        <select>
+            <option>Atlético de Madrid</option>
+            <option>Real Betis</option>
+            <option>FC. Barcelona</option>
+            <option>Real Madrid</option>
+            <option>Zaragoza(xd)</option>
+        </select><br>
+
+        <select name="ciudad">
+            <optgroup label="Europa">
+              <option>Madrid</option>
+              <option>Londres</option>
+              <option>Paris</option>
+            </optgroup>
+            <optgroup label="Suramerica">
+              <option>Santiago</option>
+              <option>Sao Paulo</option>
+              <option>Lima</option>
+              <option>Bogota</option>
+            </optgroup>
+              <optgroup label="Africa">
+              <option>Casablanca</option>
+              <option>Ciudad del Cabo</option>
+            </optgroup>
+        </select><br>
+
+        <p>
+        <input type="submit" name="submit_formulario" value="Send">
+        <input type="reset" name=reset_formulario" value="Reset"/>
+        </p>
+    </form>
+</body>
+</html>
