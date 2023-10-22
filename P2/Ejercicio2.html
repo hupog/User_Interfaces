@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio2</title>
+  <script src="jss_ej2.js"></script>
+</head>
+<body>
+  <form action="submit.php" id="formulario" method="post">
+    <input type="text" name="nombre" placeholder="Nombre" onblur=validarCampo(this)>
+    <input type="email" name="email" placeholder="Email" onblur=validarCampo(this)>
+    <input type="submit" id="boton" value="Enviar" >
+  </form>
+<p>
+  <div id="miDiv" style="display: none;">
+    <p id = "id_texto_p" onclick="mensajealerta()">Este es el contenido de muestra.</p>
+  </div>
+  
+  <button onclick="mostrarDiv('mensaje del div')">Mostrar Div</button>
+  <button onclick="ocultarDiv()">Ocultar Div</button>
+</p><br>
+<p>
+  <input type="submit" name="submit_formulario" value="Enviar Formulario" onclick=validarFormulario()>
+</p>
+
+</body>
+</html>
