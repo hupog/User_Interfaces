@@ -1,0 +1,1 @@
+datosgenerales = Array("Gonzalez Portilla Hugo","ET2", 80);
